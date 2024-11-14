@@ -7,15 +7,38 @@
         
            
     <ScrollView>
-        <StackLayout HorizontalOptions="Center" Padding="20" Spacing="20">
-        <Label Text="Previsão de Tempo" HorizontalTextAlignment="Center"/>
+        <StackLayout HorizontalOptions="Center" 
+                     Padding="20" Spacing="20">
+            
+        <Label Text="Previsão do Tempo" 
+               HorizontalTextAlignment="Center"
+               FontAttributes="Bold" 
+               FontSize="Large"/>
+            
             <FlexLayout Margin="10">
-                <Label Text="Latitude" x:Name="label1"  FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="Start" />
-                <Entry x:Name="input_lat" Placeholder="Digite sua latitude..." WidthRequest="500" HorizontalOptions="End" />
+                <Label Text="Latitude" x:Name="label1"
+                       FontAttributes="Bold" 
+                       VerticalTextAlignment="Center"
+                       HorizontalOptions="Start" />
+                
+                <Entry x:Name="input_lat"
+                       Placeholder="Digite sua latitude..."
+                       WidthRequest="500" 
+                       HorizontalOptions="End" />
+                
             </FlexLayout>
+            
             <FlexLayout>
-                <Label Text="Longitude" FontAttributes="Bold" HorizontalOptions="Start" VerticalTextAlignment="Center"/>
-                <Entry x:Name="input_long" Placeholder="Digite sua longitude..." WidthRequest="500" HorizontalOptions="End"/>
+                <Label Text="Longitude"
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Start"
+                       VerticalTextAlignment="Center"/>
+                
+                <Entry x:Name="input_long"
+                       Placeholder="Digite sua longitude..."
+                       WidthRequest="500" 
+                       HorizontalOptions="End"/>
+                
             </FlexLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
