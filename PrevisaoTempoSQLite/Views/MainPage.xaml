@@ -2,7 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrevisaoTempoSQLite.Views.MainPage"
-             Title="MainPage">
+             Title="MainPage"
+             BackgroundColor="#E8E8E8">
+        
+           
     <ScrollView>
         <StackLayout HorizontalOptions="Center" Padding="20" Spacing="20">
         <Label Text="Previsão de Tempo" HorizontalTextAlignment="Center"/>
@@ -16,19 +19,45 @@
             </FlexLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
-                <Button Text="Obter Localização" WidthRequest="150" FontAttributes="Bold" Clicked="Button_Clicked" 
-                    BackgroundColor="#4CAF50" TextColor="White"/>
-                <Button Text="Obter PlaceMark" WidthRequest="150" FontAttributes="Bold" Clicked="Button_Clicked_1" 
-                    BackgroundColor="#03A9F4" TextColor="White"/>
-                <Button Text="Histórico" WidthRequest="150" Clicked="Button_Clicked_3"
-                        FontAttributes="Bold" TextColor="White"/>
+                <Button Text="Obter Localização" 
+                        WidthRequest="150" 
+                        FontAttributes="Bold" 
+                        Clicked="Button_Clicked" 
+                    BackgroundColor="#4CAF50" 
+                        TextColor="White"/>
+                
+                <Button Text="Obter PlaceMark" 
+                        WidthRequest="150" 
+                        FontAttributes="Bold" 
+                        Clicked="Button_Clicked_1" 
+                    BackgroundColor="#03A9F4" 
+                        TextColor="White"/>
+                
+                <Button Text="Histórico" 
+                        WidthRequest="150"
+                        Clicked="Button_Clicked_3"
+                        FontAttributes="Bold" 
+                        TextColor="White"/>
             </StackLayout>
             
-            <StackLayout Spacing="15" Padding="10" Margin="5">
-                <Button Text="Obter Previsão do Tempo" WidthRequest="200" Clicked="Button_Clicked_2" 
-                    BackgroundColor="#FF5722" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold"/>
-                <Label x:Name="lbl_Weather" FontSize="Small" Text="Dados gerais do local"
-                   HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <StackLayout Spacing="15" 
+                         Padding="10"
+                         Margin="5">
+                
+                <Button Text="Obter Previsão do Tempo" 
+                        WidthRequest="200" 
+                        Clicked="Button_Clicked_2" 
+                    BackgroundColor="#FF5722"
+                        TextColor="White" 
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"/>
+                
+                <Label x:Name="lbl_Weather" 
+                       FontSize="Small" 
+                       Text="Dados gerais do local"
+                   HorizontalOptions="Center" 
+                       VerticalOptions="CenterAndExpand"/>
+                
             </StackLayout>
         </StackLayout>
     </ScrollView>
