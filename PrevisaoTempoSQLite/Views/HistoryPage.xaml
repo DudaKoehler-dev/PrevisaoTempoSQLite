@@ -8,10 +8,14 @@
         <StackLayout HorizontalOptions="Center" 
                      Padding="20" 
                      Spacing="20">
-            
+
             <Label Text="Histórico de Previsões"
-                   HorizontalTextAlignment="Center"/>
-            
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   TextColor="#03A9F4"
+                   FontSize="Large"
+            />
+
             <FlexLayout HorizontalOptions="Center">
                 <SearchBar Placeholder="Pesquise uma previsão pela cidade..." 
                            WidthRequest="500" 
@@ -22,19 +26,21 @@
                 <ListView x:Name="lst_weather">
                     <ListView.Header>
                         <Grid ColumnDefinitions="*, *, *, *, *, *">
-                            <Label Grid.Column="0" Text="Id" />
-                            <Label Grid.Column="1" Text="Longitude" />
-                            <Label Grid.Column="2" Text="Latitude" />
-                            <Label Grid.Column="3" Text="Cidade" />
-                            <Label Grid.Column="4" Text="Estado" />
-                            <Label Grid.Column="5" Text="Temperatura"/>
+                            <Label Grid.Column="0" Text="Id" FontAttributes="Bold" />
+                            <Label Grid.Column="1" Text="Longitude" FontAttributes="Bold"/>
+                            <Label Grid.Column="2" Text="Latitude" FontAttributes="Bold"/>
+                            <Label Grid.Column="3" Text="Cidade" FontAttributes="Bold"/>
+                            <Label Grid.Column="4" Text="Estado" FontAttributes="Bold"/>
+                            <Label Grid.Column="5" Text="Temperatura" FontAttributes="Bold"/>
                         </Grid>
                     </ListView.Header>
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.ContextActions>
-                                    <MenuItem Text="Apagar" Clicked="MenuItem_Clicked" CommandParameter="{Binding Id}"/>
+                                    <MenuItem Text="Apagar"
+                                              Clicked="MenuItem_Clicked" 
+                                              CommandParameter="{Binding Id}"/>
                                 </ViewCell.ContextActions>
                                 <Grid ColumnDefinitions="*, *, *, *, *, *">
                                     <Label Grid.Column="0" Text="{Binding Id}" />
@@ -53,9 +59,10 @@
                 
                 <Button Text="Apagar tudo" 
                         TextColor="White"
-                        BackgroundColor="Pink" 
+                        BackgroundColor="#03A9F4" 
                         FontAttributes="Bold" 
                         WidthRequest="200" 
+                        Padding="20"
                         Clicked="Button_Clicked"/>
             </FlexLayout>
         </StackLayout>

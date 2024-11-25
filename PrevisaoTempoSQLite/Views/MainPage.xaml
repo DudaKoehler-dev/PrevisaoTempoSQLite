@@ -13,7 +13,8 @@
         <Label Text="Previsão do Tempo" 
                HorizontalTextAlignment="Center"
                FontAttributes="Bold" 
-               FontSize="Large"/>
+               FontSize="Large"
+               TextColor="#4CAF50"/>
             
             <FlexLayout Margin="10">
                 <Label Text="Latitude" x:Name="label1"
@@ -41,7 +42,9 @@
                 
             </FlexLayout>
 
-            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" 
+                         Spacing="20" 
+                         HorizontalOptions="Center">
                 <Button Text="Obter Localização" 
                         WidthRequest="150" 
                         FontAttributes="Bold" 
@@ -59,7 +62,7 @@
                 <Button Text="Histórico" 
                         WidthRequest="150"
                         Clicked="Button_Clicked_3"
-                        FontAttributes="Bold" 
+                        FontAttributes="Bold"
                         TextColor="White"/>
             </StackLayout>
             
@@ -79,7 +82,8 @@
                        FontSize="Small" 
                        Text="Dados gerais do local"
                    HorizontalOptions="Center" 
-                       VerticalOptions="CenterAndExpand"/>
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="#03A9F4"/>
                 
             </StackLayout>
         </StackLayout>
