@@ -2,12 +2,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrevisaoTempoSQLite.Views.HistoryPage"
-             Title="HistoryPage">
+             Title="HistoryPage"
+             BackgroundColor="#E8E8E8">
     <ScrollView>
-        <StackLayout HorizontalOptions="Center" Padding="20" Spacing="20">
-            <Label Text="Histórico de Previsões" HorizontalTextAlignment="Center"/>
+        <StackLayout HorizontalOptions="Center" 
+                     Padding="20" 
+                     Spacing="20">
+            
+            <Label Text="Histórico de Previsões"
+                   HorizontalTextAlignment="Center"/>
+            
             <FlexLayout HorizontalOptions="Center">
-                <SearchBar Placeholder="Pesquise uma previsão pela cidade..." WidthRequest="500" TextChanged="SearchBar_TextChanged" />
+                <SearchBar Placeholder="Pesquise uma previsão pela cidade..." 
+                           WidthRequest="500" 
+                           TextChanged="SearchBar_TextChanged" />
+                
             </FlexLayout>
             <VerticalStackLayout>
                 <ListView x:Name="lst_weather">
@@ -41,7 +50,13 @@
                 </ListView>
             </VerticalStackLayout>
             <FlexLayout HorizontalOptions="Center">
-                <Button Text="Apagar tudo" TextColor="White" BackgroundColor="#FF4929" FontAttributes="Bold" WidthRequest="200" Clicked="Button_Clicked"/>
+                
+                <Button Text="Apagar tudo" 
+                        TextColor="White"
+                        BackgroundColor="Pink" 
+                        FontAttributes="Bold" 
+                        WidthRequest="200" 
+                        Clicked="Button_Clicked"/>
             </FlexLayout>
         </StackLayout>
     </ScrollView>
